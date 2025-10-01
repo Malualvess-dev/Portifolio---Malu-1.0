@@ -165,35 +165,86 @@
           <div class="card-top"><div class="card-badge">Java</div>
 
           <img src="Image/java3.png" alt="Imagem código fonte JAVA">
-          
+
         </div>
+
           <h3>HC+SeeU</h3>
           <p>Sistema hospitalar (CLI) com pacientes e agendamentos.</p>
           <div class="card-actions">
-            <a class="btn btn-primary" href="#" target="_blank" rel="noopener">Repositório</a>
+            <a class="btn btn-primary" href="https://github.com/Malualvess-dev/JavaChallenge" target="_blank" rel="noopener">Repositório</a>
           </div>
         </article>
+
+        <!--Projeto Python-->
 
         <article class="card" data-type="python">
           <div class="card-top"><div class="card-badge">Python</div></div>
           <h3>Task Manager</h3>
           <p>Gerenciador de tarefas simples usando arquivos .txt.</p>
           <div class="card-actions">
-            <a class="btn btn-primary" href="#" target="_blank" rel="noopener">Repositório</a>
+            <a class="btn btn-primary" href="https://github.com/Malualvess-dev/Projeto-Gerenciador-de-tarefas--Python" target="_blank" rel="noopener">Repositório</a>
           </div>
         </article>
 
+        <!--Ideia de novo Projeto-->
+
         <article class="card" data-type="web">
           <div class="card-top"><div class="card-badge">Web</div></div>
-          <h3>MediPosto</h3>
-          <p>Disponibilidade de medicamentos por posto de saúde.</p>
-          <div class="card-actions">
-            <a class="btn btn-ghost" href="#" target="_blank" rel="noopener">Demo</a>
-            <a class="btn btn-primary" href="#" target="_blank" rel="noopener">Repositório</a>
-          </div>
+          <h3>MediPosto(Ainda sendo trabalhado)</h3>
+          <p> A ideia do projeto é criar um sistema chamado MediPosto, onde as pessoas possam pesquisar pelo nome do medicamento que precisam e visualizar em quais postos de saúde ele está disponível.
+            Assim, o usuário não precisa ir de posto em posto procurando, pois o sistema mostraria os locais, os estoques e informações
+            básicas como endereço e horário de atendimento.</p>
         </article>
       </div>
     </section>
+
+      <!-- FAQ -->
+    <section id="faq" class="section">
+      <div class="container">
+        <h2>FAQ</h2>
+        <details class="faq">
+          <summary>Você aceita colaboração nos projetos?</summary>
+          <p>Sim! Issues e PRs são bem-vindos. Vamos construir juntos.</p>
+        </details>
+        <details class="faq">
+          <summary>Os projetos têm README detalhado?</summary>
+          <p>Sim, com passos de execução, tecnologias e prints quando necessário.</p>
+        </details>
+        <details class="faq">
+          <summary>Como posso entrar em contato?</summary>
+          <p>Use o formulário abaixo ou envie um e-mail direto.</p>
+        </details>
+      </div>
+    </section>
+
+    <!--Contato 2-->
+
+    <section id="contato" class="section container">
+    <h2>Contato</h2>
+
+    <!-- FORMULÁRIO -->
+  <form class="contact" onsubmit="return handleSubmit(event)">
+    <div class="fields">
+      <input type="text" name="name" placeholder="Seu nome" required>
+      <input type="email" name="email" placeholder="Seu e-mail" required>
+    </div>
+    <textarea name="message" rows="5" placeholder="Sua mensagem" required></textarea>
+    <button class="btn btn-primary" type="submit">Enviar</button>
+    <p id="formMsg" class="form-msg" role="status" aria-live="polite"></p>
+  </form>
+</section>
+
+<!--Footer-->
+<footer class="footer">
+    <div class="container">
+      <p><span aria-hidden="true">⚡</span> Portfólio de Maria Luiza — <span id="ano"></span></p>
+      <div style="display:flex; gap:.5rem; align-items:center;">
+        <a class="back-top" href="#inicio" aria-label="Voltar ao topo">↑</a>
+      </div>
+    </div>
+  </footer>
+
+
   
 </body>
 </html>

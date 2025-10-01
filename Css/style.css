@@ -639,4 +639,220 @@ nav{
 }
 }
 
+/* Tema claro */
+
+:root {
+  /* transição suave quando troca de tema */
+  --transition-theme: background-color .25s ease, color .25s ease, border-color .25s ease;
+}
+
+html, body, .card, .faq, .btn, .contact input, .contact textarea {
+  transition: var(--transition-theme);
+}
+
+/* ---------- Variáveis do tema claro ---------- */
+[data-theme="light"]{
+  --bg-950:#f6f7ff;
+  --bg-900:#ffffff;
+  --bg-850:#f3f4fd;
+
+  --border:#e5e7f5;
+
+  --text-100:#0b1020;   /* texto principal escuro */
+  --text-300:#333a55;
+  --text-400:#5e6688;
+  --muted:#6f7796;
+
+  --primary-400:#7b4df5;
+  --primary-600:#5b34d8;
+}
+
+/* ---------- Plano de fundo geral ---------- */
+[data-theme="light"] body{
+  background:
+    radial-gradient(1100px 500px at 75% -10%, rgba(123,77,245,.12), transparent 60%),
+    radial-gradient(900px 500px at -10% 20%, rgba(123,77,245,.10), transparent 60%),
+    var(--bg-900);
+  color: var(--text-100);
+}
+
+/* ---------- Header / Navbar ---------- */
+
+[data-theme="light"] .Header{
+  background: linear-gradient(180deg, rgba(255,255,255,.85), rgba(255,255,255,.75));
+  border-bottom: 1px solid var(--border);
+  backdrop-filter: blur(8px);
+}
+
+[data-theme="light"] .Contato a{
+  color: var(--text-300);
+  background: linear-gradient(180deg, #ffffff, #f7f8ff);
+  border-color: var(--border);
+}
+
+[data-theme="light"] .Contato a:hover{
+  color: var(--text-100);
+  border-color:#d5d8ef;
+}
+
+[data-theme="light"] .menu a:hover{
+  background:#eef0fd;
+  color: var(--text-100);
+}
+
+[data-theme="light"] #btnTema{
+  color:#8a5cf6;
+  background: linear-gradient(180deg, #ffffff, #f5f6ff);
+  border-color: var(--border);
+}
+
+
+/* ---------- HERO (como no print, versão clara) ---------- */
+[data-theme="light"] .hero-img{
+  opacity:.40;                    /* um pouco mais visível no light */
+  filter: saturate(110%) contrast(110%);
+}
+
+[data-theme="light"] .hero-overlay{
+  background:
+    radial-gradient(1100px 480px at 70% 0%, rgba(123,77,245,.18), transparent 60%),
+    linear-gradient(180deg, rgba(255,255,255,.35) 0%, rgba(255,255,255,.7) 50%, rgba(246,247,255,.95) 100%);
+}
+
+[data-theme="light"] .hero h1{
+  color: var(--text-100);
+  text-shadow: none;
+}
+
+[data-theme="light"] .hero h1 span{
+  color: var(--primary-600) !important;
+}
+
+[data-theme="light"] .hero p{
+  color: var(--text-300);
+  text-shadow: none;
+}
+
+[data-theme="light"] .btn-ghost{
+  background: linear-gradient(180deg, #ffffff, #f5f6ff);
+  color: var(--text-300);
+  border-color: var(--border);
+}
+
+[data-theme="light"] .btn-ghost:hover{ 
+    color: var(--text-100); 
+}
+
+
+/* ---------- Stats ---------- */
+[data-theme="light"] .stat{
+  background: linear-gradient(180deg, #ffffff, #f6f7ff);
+  border-color: var(--border);
+  box-shadow: 0 10px 30px rgba(0,0,0,.05);
+}
+[data-theme="light"] .stat-label{ 
+    color: var(--muted);
+
+}
+
+
+/* ---------- Cards / Projetos / Habilidades ---------- */
+
+
+[data-theme="light"] .card{
+  background: linear-gradient(180deg, #ffffff, #f6f7ff);
+  border-color: var(--border);
+  box-shadow: 0 10px 30px rgba(0,0,0,.06);
+}
+
+[data-theme="light"] .card-top{ 
+    background:#f1f2fb; 
+}
+
+[data-theme="light"] .card-top img{ 
+    filter: saturate(102%) contrast(102%); 
+}
+
+[data-theme="light"] .card-badge{
+  box-shadow: 0 8px 20px rgba(123,77,245,.25);
+}
+
+/* chips de filtro */
+[data-theme="light"] .chip{
+  background: linear-gradient(180deg, #ffffff, #f5f6ff);
+  color: var(--text-300);
+  border-color: var(--border);
+}
+[data-theme="light"] .chip:hover{ 
+    color: var(--text-100); 
+
+}
+
+/* ---------- FAQ ---------- */
+
+[data-theme="light"] .faq{
+  background: linear-gradient(180deg, #ffffff, #f6f7ff);
+  border-color: var(--border);
+  box-shadow: 0 10px 30px rgba(0,0,0,.05);
+}
+
+[data-theme="light"] .faq > summary{ 
+    color: var(--text-100); 
+}
+
+[data-theme="light"] .faq[open]{ 
+    background: linear-gradient(180deg, #f9f9ff, #f2f4ff);
+
+}
+
+/* ---------- Formulário ---------- */
+
+[data-theme="light"] .contact input,
+[data-theme="light"] .contact textarea{
+  color: #0b1020;
+  background: linear-gradient(180deg, #ffffff, #f5f6ff);
+  border-color: var(--border);
+  box-shadow: 0 0 0 1px var(--border) inset;
+
+}
+
+[data-theme="light"] .contact input::placeholder,
+[data-theme="light"] .contact textarea::placeholder{
+  color: #9aa2c0;
+}
+
+/* ---------- Footer ---------- */
+
+[data-theme="light"] .footer{
+  background: linear-gradient(180deg, #ffffff, #f7f8ff);
+  color: var(--text-300);
+  border-top: 1px solid var(--border);
+}
+
+[data-theme="light"] .back-top{
+  background: linear-gradient(180deg, #ffffff, #f5f6ff);
+  border-color: var(--border);
+}
+
+
+/* ---------- Botão “loading” (form) ---------- */
+.is-loading{
+  position: relative;
+}
+
+.is-loading::after{
+  content:"";
+  position:absolute; inset:0;
+  border-radius: inherit;
+  background: radial-gradient(18px 18px at 12% 50%, rgba(255,255,255,.75), transparent 60%);
+  animation: pulse 1s ease-in-out infinite;
+}
+
+@keyframes pulse{
+  0%,100%{ opacity:.35 }
+  50%{ opacity:.7 }
+}
+
+
+
 

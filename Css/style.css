@@ -64,4 +64,185 @@ a{
     color:var(--text-400); 
 }
 
+/* Header do projeto */
+
+.Header{
+  position:sticky; top:0; z-index:50;
+  background:linear-gradient(180deg, rgba(10,10,16,.95), rgba(10,10,16,.78));
+  border-bottom:1px solid rgba(255,255,255,.05);
+  backdrop-filter: blur(6px);
+}
+
+.Header .container{
+  display:flex; 
+  align-items:center; 
+  gap:1rem; 
+  min-height:64px; 
+  flex-wrap:nowrap;
+}
+
+/* Contatos (GitHub/LinkedIn/CV) */
+
+.Contato{ 
+    display:flex; 
+}
+
+.Contato ul{
+  display:flex; 
+  align-items:center; 
+  gap:.6rem; 
+  margin:0; 
+  padding:0; 
+  list-style:none;
+}
+
+.Contato a{
+  display:inline-flex; 
+  align-items:center; 
+  gap:.5rem;
+  height:40px; 
+  padding:0 .9rem;
+  border-radius:14px; 
+  border:1px solid var(--border);
+  background:linear-gradient(180deg, #171a27, #10121a);
+  color:var(--text-300); 
+  font-weight:700; 
+  white-space:nowrap; 
+  transition:.2s;
+  box-shadow: var(--ring);
+}
+
+.Contato a:hover{ 
+    color:#fff; 
+    border-color:#333657; 
+    transform:translateY(-1px); 
+}
+
+.Contato img{
+  width:20px ; 
+  height:20px ;
+  object-fit:cover; 
+  border-radius:4px; 
+  display:block;
+}
+
+/* Marca */
+.Informacao{ 
+    font-weight:800; 
+    white-space:nowrap; 
+}
+
+/* Menu */
+
+nav{ 
+    margin-left:auto; 
+}
+
+.menu{ 
+    display:flex; 
+    gap:1rem; 
+    list-style:none; 
+    margin:0; 
+    padding:0; 
+}
+
+.menu a{
+  display:inline-block; 
+  padding:.55rem .8rem; 
+  border-radius:10px;
+  color:var(--text-300); 
+  font-weight:600; 
+  transition:.2s;
+}
+
+.menu a:hover{ 
+    background:#151826; 
+    color:#fff; 
+}
+
+
+/* Botão tema */
+
+#btnTema{
+  margin-left:.25rem; 
+  border:1px solid var(--border);
+  background:linear-gradient(180deg, #171a27, #10121a);
+  color:#ffd36a; 
+  border-radius:12px; 
+  padding:.5rem .6rem; 
+  cursor:pointer;
+}
+
+/* ------------------------ HERO -------------------------- */
+
+.hero{
+  position: relative; 
+  overflow: hidden;
+  min-height: clamp(380px, 60vh, 520px);
+  border-bottom: 1px solid var(--border);
+}
+
+.hero-img{
+  position: absolute; 
+  inset: 0;
+  width: 100%; 
+  height: 100%; 
+  object-fit: cover;
+  filter: saturate(105%) contrast(106%);
+  opacity: .35;
+}
+
+.hero-overlay{
+  position: absolute; 
+  inset: 0; 
+  pointer-events: none;
+  background:
+    radial-gradient(1100px 480px at 70% 0%, rgba(123,77,245,.20), transparent 60%),
+    linear-gradient(180deg, rgba(10,11,18,.25) 0%, rgba(10,11,18,.55) 55%, rgba(10,11,18,.92) 100%);
+}
+
+.hero-text{
+  position: absolute; 
+  inset: 0;
+  display: flex; 
+  flex-direction: column;
+  align-items: flex-start; 
+  justify-content: flex-end;
+  gap: .6rem; 
+  padding: 0 2rem 44px; 
+  text-align:left;
+}
+
+.hero h1{
+  margin:0; 
+  font-weight:900; 
+  line-height:1.1; 
+  letter-spacing:.3px;
+  font-size: clamp(2.2rem, 6vw, 3.2rem);
+  color:#eef0ff; 
+  text-shadow:0 6px 24px rgba(0,0,0,.45);
+
+}
+
+.hero h1 span{
+  color:#8b5cf6; 
+  background:none;
+  -webkit-background-clip:initial; 
+  background-clip:initial;
+}
+
+.hero p{
+  margin:0; 
+  color:#cfd3ee; 
+  max-width:66ch;
+  font-size: clamp(1rem, 1.4vw, 1.18rem); 
+  line-height:1.6;
+  text-shadow:0 4px 16px rgba(0,0,0,.45);
+}
+
+.hero-cta{ 
+    display:flex; 
+    gap:.8rem; 
+    margin-top:.6rem; }
+    
 

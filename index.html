@@ -3,44 +3,41 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="CSS" href="Css/style.css">
+  <link rel="stylesheet" href="Css/style.css">
   <title>Portifólio - Malu</title>
 </head>
 <body>
  
-  <!--Faixa do Header-->
-
-  <header class="Header">
-
+ <header class="Header">
+  <div class="container">
+    <!-- Contatos -->
     <div class="Contato">
-      <!--GitHub-->
       <ul>
-      <li><a href="https://github.com/Malualvess-dev">GitHub<img src="Image/github.png" alt="IconeGitHUb"></a></li>
-      <!--Linkedin-->
-      <li><a href="https://www.linkedin.com/in/maluaquino">Linkedin <img src="Image/linkedin.png" alt="IconeLinkedin"></a></li>
-      <!--Curriculo-->
-      <li><a href="Image/CV_Maria Luiza.pdf">CV <img src="Image/Cv_foto.jpg" alt="Icone CV"></a></li>
-    </ul> 
-    
-    </div> 
-    <div class="container">
-      <div class="Informacao">
-        <span aria-hidden="true">👩‍💻</span>
-        <strong>Maria Luiza • Dev</strong>
-      </div>
-
-      <nav aria-label="Primária">
-        <ul class="menu">
-          <li><a href="#inicio">Início</a></li>
-          <li><a href="#habilidades">Habilidades</a></li>
-          <li><a href="#projetos">Projetos</a></li>
-          <li><a href="#faq">FAQ</a></li>
-        </ul>
-      </nav>
-
-      <button id="btnTema" class="btn" aria-pressed="false" aria-label="Alternar tema">🌙</button>
+        <li><a href="https://github.com/Malualvess-dev">GitHub <img src="Image/github.png" alt="GitHub"></a></li>
+        <li><a href="https://www.linkedin.com/in/maluaquino">LinkedIn <img src="Image/linkedin.png" alt="LinkedIn"></a></li>
+        <li><a href="Image/CV_Maria Luiza.pdf">CV <img src="Image/Cv_foto.jpg" alt="CV"></a></li>
+      </ul>
     </div>
-  </header>
+
+    <!-- Marca + menu -->
+    <div class="Informacao">
+      <strong>Maria Luiza • Dev</strong>
+    </div>
+
+    <nav>
+      <ul class="menu">
+        <li><a href="#inicio">Início</a></li>
+        <li><a href="#habilidades">Habilidades</a></li>
+        <li><a href="#projetos">Projetos</a></li>
+        <li><a href="#faq">FAQ</a></li>
+      </ul>
+    </nav>
+
+    <!-- Botão tema -->
+    <button id="btnTema">🌙</button>
+  </div>
+</header>
+
 
   <!--Banner Animado-->
 
@@ -178,7 +175,11 @@
         <!--Projeto Python-->
 
         <article class="card" data-type="python">
-          <div class="card-top"><div class="card-badge">Python</div></div>
+          <div class="card-top"><div class="card-badge">Python</div>
+        
+          <img src="Image/python1.png" alt="Imagem python">
+
+        </div>
           <h3>Task Manager</h3>
           <p>Gerenciador de tarefas simples usando arquivos .txt.</p>
           <div class="card-actions">
@@ -188,6 +189,8 @@
 
         <!--Ideia de novo Projeto-->
 
+
+        
         <article class="card" data-type="web">
           <div class="card-top"><div class="card-badge">Web</div></div>
           <h3>MediPosto(Ainda sendo trabalhado)</h3>
@@ -237,7 +240,7 @@
 <!--Footer-->
 <footer class="footer">
     <div class="container">
-      <p><span aria-hidden="true">⚡</span> Portfólio de Maria Luiza — <span id="ano"></span></p>
+      <p><span aria-hidden="true">⚡</span> @Portifolio -Maria Luiza Alves De Aquino — 💜— 2025 <span id="ano"></span></p>
       <div style="display:flex; gap:.5rem; align-items:center;">
         <a class="back-top" href="#inicio" aria-label="Voltar ao topo">↑</a>
       </div>

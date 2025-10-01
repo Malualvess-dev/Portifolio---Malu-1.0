@@ -8,11 +8,11 @@
 </head>
 <body>
  
-  <!--Faixa do Banner-->
+  <!--Faixa do Header-->
 
-  <header class="Banner">
+  <header class="Header">
 
-    <div class="ComoMeEncontrar">
+    <div class="Contato">
       <!--GitHub-->
       <ul>
       <li><a href="https://github.com/Malualvess-dev">GitHub<img src="Image/github.png" alt="IconeGitHUb"></a></li>
@@ -35,13 +35,165 @@
           <li><a href="#habilidades">Habilidades</a></li>
           <li><a href="#projetos">Projetos</a></li>
           <li><a href="#faq">FAQ</a></li>
-          <li><a href="#contato">Contato</a></li>
         </ul>
       </nav>
 
       <button id="btnTema" class="btn" aria-pressed="false" aria-label="Alternar tema">🌙</button>
     </div>
   </header>
+
+  <!--Banner Animado-->
+
+
+  <section id="hero" class="hero">
+    <img src="Image/banner.jpg" alt="Banner do portfólio" class="hero-img">
+    <div class="hero-overlay"></div>
+    <div class="hero-text container">
+      <h1>Olá! Me chamo <span>Maria Luiza Alves De Aquino</span></h1>
+      <p>Estudante de ADS (2º semestre) — foco em Full-stack, e nas linguagens JAVA e Python.</p>
+      <div class="hero-cta">
+        <a href="#projetos" class="btn btn-primary">Ver projetos</a>
+        <a href="#contato" class="btn btn-ghost">Fale comigo</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="stats" aria-label="Indicadores">
+      <div class="stat">
+          <div class="stat-num" data-target="25">0</div>
+              <div class="stat-label">Projetos</div>
+        
+            </div>
+            <div class="stat">
+              <div class="stat-num" data-target="350">0</div>
+              <div class="stat-label">Commits</div>
+            </div>
+            <div class="stat">
+              <div class="stat-num" data-target="8">0</div>
+          <div class="stat-label">Certificações</div>
+      </div>
+    </div>
+
+    <!-- Sobre (com sua foto) -->
+    <section id="sobre" class="section section-alt">
+      <div class="container about about-grid">
+        <div class="about-photo-wrap">
+          <img src="Image/minhafoto.jpg" alt="Foto de Maria Luiza" class="about-photo">
+        </div>
+        <div>
+          <h2>Sobre mim</h2>
+          <p>
+            Amo tecnologia, UI limpa e resolver problemas reais. 
+            Estudo <strong>ADS</strong> e desenvolvo projetos com <strong>HTML, CSS, JavaScript, Java e Python</strong>.
+          </p>
+          <ul class="skills">
+            <li>HTML/CSS/JS</li>
+            <li>React (estudando)</li>
+            <li>Java</li>
+            <li>Python</li>
+            <li>SQL</li>
+            <li>Git & GitHub</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- HABILIDADES -->
+    <section id="habilidades" class="section">
+      <div class="container">
+        <h2>Habilidades</h2>
+        <p class="muted">Tecnologias e práticas que utilizo no dia a dia.</p>
+
+        <div class="cards">
+          <article class="card">
+            <h3>Back-end</h3>
+            <p>Java (POO, coleções) e conexão com CRUD, Python (scripts e EDA), lógica e boas práticas.</p>
+          </article>
+          <article class="card">
+            <h3>Banco de Dados</h3>
+            <p>Modelagem, SQL básico a intermediário, consultas e normalização.</p>
+          </article>
+          <article class="card">
+            <h3>Front-end</h3>
+            <p>HTML semântico, CSS responsivo, JavaScript vanilla, acessibilidade, react, Node.JS, TypeScript e TailWind.</p>
+          </article>
+          <article class="card">
+            <h3>Ferramentas</h3>
+            <p>Git/GitHub, versionamento, README, issues, e organização de repositórios.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!--Projetos-->
+
+     <main>
+    <section id="projetos" class="section container">
+      <div class="section-head">
+        <h2>Projetos em Destaque</h2>
+        <div class="filters" role="tablist" aria-label="Filtros">
+          <button class="chip active" data-filter="all">Todos</button>
+          <button class="chip" data-filter="web">Web</button>
+          <button class="chip" data-filter="java">Java</button>
+          <button class="chip" data-filter="python">Python</button>
+        </div>
+      </div>
+
+
+      <!--Café Aurora-->
+
+      <div class="grid">
+        <article class="card" data-type="web">
+          <div class="card-top"><div class="card-badge">Web</div>
+
+          <!--Imagem do Projeto-->
+
+          <img src="Image/Cafe1.png" alt="Imagem do café">
+
+        </div>
+
+          <h3>Caffè Aurora</h3>
+          <p>Site de cafeteria com carrinho, tema escuro e checkout.</p>
+          <div class="card-actions">
+            <a class="btn btn-primary" href="https://github.com/Malualvess-dev/Projeto-Cafeteria.git" target="_blank" rel="noopener">Repositório</a>
+          </div>
+        </article>
+
+        <!--Projeto Java-->
+
+        <article class="card" data-type="java">
+          <div class="card-top"><div class="card-badge">Java</div>
+
+          <img src="Image/java3.png" alt="Imagem código fonte JAVA">
+          
+        </div>
+          <h3>HC+SeeU</h3>
+          <p>Sistema hospitalar (CLI) com pacientes e agendamentos.</p>
+          <div class="card-actions">
+            <a class="btn btn-primary" href="#" target="_blank" rel="noopener">Repositório</a>
+          </div>
+        </article>
+
+        <article class="card" data-type="python">
+          <div class="card-top"><div class="card-badge">Python</div></div>
+          <h3>Task Manager</h3>
+          <p>Gerenciador de tarefas simples usando arquivos .txt.</p>
+          <div class="card-actions">
+            <a class="btn btn-primary" href="#" target="_blank" rel="noopener">Repositório</a>
+          </div>
+        </article>
+
+        <article class="card" data-type="web">
+          <div class="card-top"><div class="card-badge">Web</div></div>
+          <h3>MediPosto</h3>
+          <p>Disponibilidade de medicamentos por posto de saúde.</p>
+          <div class="card-actions">
+            <a class="btn btn-ghost" href="#" target="_blank" rel="noopener">Demo</a>
+            <a class="btn btn-primary" href="#" target="_blank" rel="noopener">Repositório</a>
+          </div>
+        </article>
+      </div>
+    </section>
   
 </body>
 </html>

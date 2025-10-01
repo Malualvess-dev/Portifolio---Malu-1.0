@@ -244,5 +244,235 @@ nav{
     display:flex; 
     gap:.8rem; 
     margin-top:.6rem; }
+
+/* Botões */
+
+.btn{
+  display:inline-flex; 
+  align-items:center; 
+  justify-content:center;
+  gap:.5rem; 
+  padding:.85rem 1.15rem; 
+  border-radius:14px;
+  border:1px solid var(--border); 
+  font-weight:800; 
+  cursor:pointer; 
+  transition:.2s;
+
+}
+
+.btn-primary{
+  color:#fff;
+  border:none;
+  background:linear-gradient(180deg, var(--primary-400), var(--primary-600));
+  box-shadow:0 14px 40px rgba(123,77,245,.45), inset 0 1px 0 rgba(255,255,255,.08);
+
+}
+
+.btn-primary:hover{ 
+    filter:brightness(1.05); 
+    transform:translateY(-1px); 
+}
+
+.btn-ghost{
+  background:linear-gradient(180deg, #171a27, #10121a);
+  color:var(--text-300);
+
+}
+
+.btn-ghost:hover{ 
+    color:#fff; 
+}    
+
+/* -------------------- Stats (Números) ------------------- */
+.stats{
+  display:grid; 
+  grid-template-columns:repeat(3, 1fr);
+  gap:1rem; 
+  width:min(1100px,92%); 
+  margin:2.8rem auto 2.6rem;  
+
+}
+
+.stat{
+  background:linear-gradient(180deg, #141725, #10121a);
+  border:1px solid var(--border);
+  border-radius:var(--radius-xl);
+  padding:1rem 1.2rem; 
+  box-shadow:var(--shadow-1);
+
+}
+
+.stat-num{
+  font-size:1.8rem; 
+  font-weight:800;
+  background:linear-gradient(90deg, #cfcaff, #7b4df5);
+  -webkit-background-clip:text; 
+  background-clip:text; 
+  color:transparent;
+
+}
+
+.stat-label{ 
+    color:var(--muted); 
+    font-weight:600;
+}
+
+/* ----------------------- Seções ------------------------- */
+.section{
+    padding:64px 0; 
+
+}
+
+.section-alt{ 
+    background:linear-gradient(180deg, #0f111a, #0b0c12); 
+
+}
+
+.section h2{ 
+    font-size:clamp(1.6rem, 3vw, 2rem); 
+    margin:0 0 .6rem; 
+
+}
+
+/* -------------------- Sobre / Foto ---------------------- */
+.about-grid{
+  display:grid; 
+  grid-template-columns:240px 1fr;
+  gap:1.5rem; 
+  align-items:center;
+
+}
+
+.about-photo-wrap{
+  background: radial-gradient(200px 200px at 70% 0%, rgba(123,77,245,.25), transparent 70%), #10121a;
+  border:1px solid var(--border); 
+  padding:.6rem; 
+  border-radius:var(--radius-2xl);
+  box-shadow:var(--shadow-1);
+
+}
+
+.about-photo{ 
+    border-radius:calc(var(--radius-2xl) - 8px); 
+}
+
+.skills{
+  display:flex; 
+  flex-wrap:wrap; 
+  gap:.5rem; 
+  padding:0; 
+  margin:1rem 0 0; 
+  list-style:none;
+
+}
+.skills li{
+  padding:.35rem .6rem; 
+  border-radius:999px; 
+  border:1px solid var(--border);
+  background:#121424; 
+  color:var(--text-300); 
+  font-weight:600;
+
+}
+
+/* -------------------- Cards (Habilidades) ---------------- */
+.cards{
+  display:grid; 
+  grid-template-columns:repeat(4, 1fr); 
+  gap:1rem; 
+  margin-top:1rem;
+
+}
+
+.card{
+
+  background:linear-gradient(180deg, var(--bg-850), var(--bg-900));
+  border:1px solid var(--border);
+  border-radius:var(--radius-xl); 
+  padding:1.1rem; 
+  box-shadow:var(--shadow-1);
+
+}
+.card h3{ 
+    margin:.25rem 0 .5rem; 
+
+}
+
+.card p{ 
+    color:var(--text-300);
+
+}
+/* -------------------- Projetos (grid) ------------------- */
+.section-head{ display:flex; align-items:center; justify-content:space-between; gap:1rem; }
+.filters{ display:flex; gap:.5rem; flex-wrap:wrap; }
+.chip{
+  padding:.45rem .8rem; border-radius:999px;
+  border:1px solid var(--border);
+  background:linear-gradient(180deg, #141725, #10121a);
+  color:var(--text-300); font-weight:700; cursor:pointer; transition:.2s;
+}
+
+.chip:hover{ 
+    color:#fff; 
+}
+
+.chip.active{
+
+  color:#fff; 
+  border-color:transparent;
+  background:linear-gradient(180deg, var(--primary-400), var(--primary-600));
+  box-shadow:0 10px 25px rgba(123,77,245,.35);
+}
+
+.grid{
+  margin-top:1rem;
+  display:grid; 
+  grid-template-columns:repeat(3, 1fr); 
+  gap:1.2rem;
+
+}
+
+.card-top{
+  position:relative; 
+  margin:-.2rem; 
+  margin-bottom:.8rem;
+  padding:.2rem; 
+  border-radius:calc(var(--radius-xl) - 8px);
+  overflow:hidden; 
+  background:#0e0f17;
+
+}
+
+.card-top img{
+  width:100%; 
+  height:140px; 
+  object-fit:cover; 
+  border-radius:14px; 
+  filter:saturate(90%); 
+  opacity:.95;
+
+}
+
+.card-badge{
+  position:absolute; 
+  top:.6rem; 
+  right:.6rem;
+  padding:.35rem .6rem; 
+  border-radius:999px; 
+  font-weight:800; 
+  font-size:.8rem;
+  background:linear-gradient(180deg, var(--primary-400), var(--primary-600));
+  color:#fff; 
+  box-shadow:0 8px 20px rgba(123,77,245,.35);
+
+}
+
+.card-actions{ 
+    margin-top:1rem; 
+    display:flex; 
+    gap:.6rem; 
     
+}
+
 
